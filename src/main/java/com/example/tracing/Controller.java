@@ -9,8 +9,20 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 
     @RequestMapping("/test")
-    public String test(){
+    public String test() {
         log.info("test");
         return "test";
+    }
+
+    @RequestMapping("/ping")
+    public String ping() {
+        log.info("pong");
+        return "pong";
+    }
+
+    @RequestMapping("/hello")
+    public String hello() {
+        log.info("hello");
+        return "hello";
     }
 }
